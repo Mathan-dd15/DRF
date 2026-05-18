@@ -1,0 +1,9 @@
+gunicorn
+psycopg2-binary
+django
+djangorestframework
+pymysql
+cryptography
+
+
+
