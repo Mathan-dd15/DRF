@@ -9,11 +9,11 @@ services:
       - "8000:8000"
 
     extra_hosts:
-      - "host.docker.internal:host-gateway"
+      - "host.docker.internal:hfost-gateway"
 
     environment:
       DB_NAME: drfdb
       DB_USER: drfuser
       DB_PASSWORD: password
-      DB_HOST: host.docker.internal
+      DB_HOST: 172.17.0.1
       DB_PORT: 3306
