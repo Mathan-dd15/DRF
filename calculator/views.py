@@ -43,3 +43,8 @@ class DatabaseDetailsAPIView(APIView):
             },
             status=status.HTTP_200_OK,
         )
+
+
+class HelloMathanAPIView(APIView):
+    def get(self, request):
+        return Response(" Hello mathan", status=status.HTTP_200_OK)
